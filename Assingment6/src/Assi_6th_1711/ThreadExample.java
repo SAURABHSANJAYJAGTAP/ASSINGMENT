@@ -8,6 +8,7 @@ class TRD2
 }
 
 
+
 public class ThreadExample extends TRD2 implements Runnable{
 	public void run()
 	{  System.out.println("current TRD "+Thread.currentThread().getName());
