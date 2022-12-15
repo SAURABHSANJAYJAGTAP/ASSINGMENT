@@ -1,0 +1,195 @@
+Name -:Saurabh Sanjay Jagtap
+Assignment no -:9
+Que Number -:1
+
+
+mysql> create database Profation;
+Query OK, 1 row affected (0.01 sec)
+
+mysql> use Profation;
+Database changed
+mysql> create table parents(p_id int primary key,p_name varchar(20),city varchar(20),age int,AnnualIncome int,vaccupation varchar(20),E_mailId varchar(20));
+Query OK, 0 rows affected (0.04 sec)
+
+mysql> insert into parents values(101,"Saurabh Jagtap","Satara",55,650000,"Manager","saurabh@gmail.com");
+Query OK, 1 row affected (0.01 sec)
+
+mysql> insert into parents values(102,"Karan Jagtap","pune",40,554000,"Construction","karan002@gmail.com");
+Query OK, 1 row affected (0.01 sec)
+
+mysql> insert into parents values(103,"Atharv Jagtap","Delhi",45,652000,"Desinger","atharv003@gmail.com");
+Query OK, 1 row affected (0.01 sec)
+
+mysql> insert into parents values(104,"Om Jagtap","pune",50,752000,"Teacher","om004@gmail.com");
+Query OK, 1 row affected (0.01 sec)
+
+mysql> insert into parents values(105,"Rudra Jagtap","Mumbai",46,402000,"Agent","rudra005@gmail.com");
+Query OK, 1 row affected (0.01 sec)
+
+mysql> insert into parents values(106,"Sushil Rakshe","Banglore",53,495000,"Company","sushil006@gmail.com");
+Query OK, 1 row affected (0.01 sec)
+
+mysql> insert into parents values(107,"Avinash Jagtap","Banglore",62,695000,"BuisnessMan","avinash007@gmail.com");
+Query OK, 1 row affected (0.01 sec)
+
+mysql> insert into parents values(108,"Shivam Tambe","Chennai",56,795000,"Farmer","shivam008@gmail.com");
+Query OK, 1 row affected (0.01 sec)
+
+mysql> insert into parents values(109,"Tushar Shinde","surat",41,395000,"Farmer","tushar@gmail.com");
+Query OK, 1 row affected (0.01 sec)
+
+mysql> insert into parents values(110,"Suyash Jamdade","satara",50,505000,"HR","suyash@gmail.com");
+Query OK, 1 row affected (0.01 sec)
+
+mysql> insert into parents values(111,"Divesh Kshirsagar","jaipur",45,605000,"Soft Engineer","divesh@gmail.com");
+Query OK, 1 row affected (0.01 sec)
+
+mysql> insert into parents values(112,"Prajwal ovhal","Delhi",39,575000,"Soft Engineer","prajwal@gmail.com");
+Query OK, 1 row affected (0.01 sec)
+
+mysql> insert into parents values(113,"Kaushik Padwal","Pune",49,475800,"Agent","kaushik@gmail.com");
+Query OK, 1 row affected (0.01 sec)
+
+mysql> insert into parents values(114,"Rupesh Sutar","Banglore",42,495800,"Accountant","rupesh@gmail.com");
+Query OK, 1 row affected (0.01 sec)
+
+mysql> insert into parents values(115,"Suraj Gaikawad","Ahemdabad",38,695800,"Doctor","suraj@gmail.com");
+Query OK, 1 row affected (0.01 sec)
+
+mysql> insert into parents values(116,"Mahesh chaodhari","Indor",58,795600,"Civil Engineer","mahesh@gmail.com");
+Query OK, 1 row affected (0.01 sec)
+
+mysql> insert into parents values(117,"Shubham Katkar","Mumbai",44,495600,"Chef","shubham@gmail.com");
+Query OK, 1 row affected (0.01 sec)
+
+mysql> insert into parents values(118,"Akshay Bagade","Patna",44,475600,"Worker","akshay@gmail.com");
+Query OK, 1 row affected (0.01 sec)
+
+mysql> insert into parents values(119,"Sunil Otale","Kokan",41,575600,"HR","sunil@gmail.com");
+Query OK, 1 row affected (0.01 sec)
+
+mysql> insert into parents values(120,"Sopan Ghonte","Kokan",41,575600,"Police","sopan@gmail.com");
+Query OK, 1 row affected (0.01 sec)
+
+mysql> select * from parents;
++------+----------------------+-----------+------+--------------+----------------+----------------------+
+| p_id | p_name               | city      | age  | AnnualIncome | vaccupation    | E_mailId             |
++------+----------------------+-----------+------+--------------+----------------+----------------------+
+|  101 | Saurabh Jagtap       | Satara    |   55 |       650000 | Manager        | saurabh@gmail.com    |
+|  102 | Karan Jagtap         | pune      |   40 |       554000 | Construction   | karan002@gmail.com   |
+|  103 | Atharv Jagtap        | Delhi     |   45 |       652000 | Desinger       | athrva003@gmail.com  |
+|  104 | Om Jagtap            | pune      |   50 |       752000 | Teacher        | om004@gmail.com      |
+|  105 | Rudra Jagtap         | Mumbai    |   46 |       402000 | Agent          | rudra005@gmail.com   |
+|  106 | Sushil Rakshe        | Banglore  |   53 |       495000 | Company        | sushil006@gmail.com  |
+|  107 | Avinash Jagtap       | Banglore  |   62 |       695000 | BuisnessMan    | avinash007@gmail.com |
+|  108 | Shivam Tambe         | Chennai   |   56 |       795000 | Farmer         | shivam008@gmail.com  |
+|  109 | Tushar Shinde        | surat     |   41 |       395000 | Farmer         | tushar@gmail.com     |
+|  110 | Suyash Jamdade       | satara    |   50 |       505000 | HR             | suyash@gmail.com     |
+|  111 | Divesh Kshirsagar    | jaipur    |   45 |       605000 | Soft Engineer  | divesh@gmail.com     |
+|  112 | Prajwal ovhal        | Delhi     |   39 |       575000 | Soft Engineer  | prajwal@gmail.com    |
+|  113 | Kaushik Padwal       | Pune      |   49 |       475800 | Agent          | Kaushik@gmail.com    |
+|  114 | Rupesh Sutar         | Banglore  |   42 |       495800 | Accountant     | rupesh@gmail.com     |
+|  115 | Suraj Gaikawad       | Ahemdabad |   38 |       695800 | Doctor         | suraj@gmail.com      |
+|  116 | Mahesh Chaudhari     | Indor     |   58 |       795600 | Civil Engineer | mahesh@gmail.com     |
+|  117 | Shubham Katkar       | Mumbai    |   44 |       495600 | Chef           | shubham@gmail.com    |
+|  118 | Akshay Bagade        | Patna     |   44 |       475600 | Worker         | akshay@gmail.com     |
+|  119 | Sunil Otale          | Kokan     |   41 |       575600 | HR             | sunil@gmail.com      |
+|  120 | Pooja Rajput         | Kokan     |   41 |       575600 | Police         | sopan@gmail.com      |
++------+----------------------+-----------+------+--------------+----------------+----------------------+
+20 rows in set (0.00 sec)
+
+
+1.Count Number Of Parents Whose Annual Income Is More Than 6 Lakh.?
+Ans-:
+
+
+mysql> select count(AnnualIncome)from parents where annualIncome>600000;
++---------------------+
+| count(AnnualIncome) |
++---------------------+
+|                   8 |
++---------------------+
+1 row in set (0.01 sec)
+
+
+2.Select Parent Whose Annual Income Is Iess Than 5 Lakh Otherwise Age Is More Than 45.?
+Ans-:
+
+
+mysql> select * from parents where AnnualIncome<500000 or age>45;
+
++------+----------------------+-----------+------+--------------+----------------+----------------------+
+| p_id | p_name               | city      | age  | AnnualIncome | vaccupation    | E_mailId             |
++------+----------------------+-----------+------+--------------+----------------+----------------------+
+|  101 | Saurabh Jagtap       | Satara    |   55 |       650000 | Manager        | saurabh@gmail.com    |
+|  104 | Om Jagtap            | pune      |   50 |       752000 | Teacher        | om004@gmail.com      |
+|  105 | Rudra Jagtap         | Mumbai    |   46 |       402000 | Agent          | rudra005@gmail.com   |
+|  106 | Sushil Rakshe        | Banglore  |   53 |       495000 | Company        | sushil006@gmail.com  |
+|  107 | Avinash Jagtap       | Banglore  |   62 |       695000 | BuisnessMan    | avinash007@gmail.com |
+|  108 | Shivam Tambe         | Chennai   |   56 |       795000 | Farmer         | shivam008@gmail.com  |
+|  109 | Tushar Shinde        | surat     |   41 |       395000 | Farmer         | tushar@gmail.com     |
+|  110 | Suyash Jamdade       | satara    |   50 |       505000 | HR             | suyash@gmail.com     |
+|  113 | Kaushik Padwal       | Pune      |   49 |       475800 | Agent          | Kaushik@gmail.com    |
+|  114 | Rupesh Sutar         | Banglore  |   42 |       495800 | Accountant     | rupesh@gmail.com     |
+|  116 | Mahesh Chaudhari     | Indor     |   58 |       795600 | Civil Engineer | mahesh@gmail.com     |
+|  117 | Shubham Katkar       | Mumbai    |   44 |       495600 | Chef           | shubham@gmail.com    |
+|  118 | Akshay Bagade        | Patna     |   44 |       475600 | Worker         | akshay@gmail.com     |
++------+----------------------+-----------+------+--------------+----------------+----------------------+
+13 rows in set (0.00 sec)
+
+
+3.Select Parent Who Are Living In City Ahmedabad,Delhi,Mumbai,Chennai,Banglore.?
+Ans-:
+
+
+mysql> select * from parents where city in('Ahmedabad','Delhi','Mumbai','Chennai','Banglore');
+
++------+----------------------+-----------+------+--------------+----------------+----------------------+
+| p_id | p_name               | city      | age  | AnnualIncome | vaccupation    | E_mailId             |
++------+----------------------+-----------+------+--------------+----------------+----------------------+
+|  103 | Atharv Jagtap        | Delhi     |   45 |       652000 | Desinger       | athrva003@gmail.com  |
+|  105 | Rudra Jagtap         | Mumbai    |   46 |       402000 | Agent          | rudra005@gmail.com   |
+|  106 | Sushil Rakshe        | Banglore  |   53 |       495000 | Company        | sushil006@gmail.com  |
+|  107 | Avinash Jagtap       | Banglore  |   62 |       695000 | BuisnessMan    | avinash007@gmail.com |
+|  108 | Shivam Tambe         | Chennai   |   56 |       795000 | Farmer         | shivam008@gmail.com  |
+|  112 | Prajwal ovhal        | Delhi     |   39 |       575000 | Soft Engineer  | prajwal@gmail.com    |
+|  114 | Rupesh Sutar         | Banglore  |   42 |       495800 | Accountant     | rupesh@gmail.com     |
+|  117 | Shubham Katkar       | Mumbai    |   44 |       495600 | Chef           | shubham@gmail.com    |
++------+----------------------+-----------+------+--------------+----------------+----------------------+
+8 rows in set (0.00 sec)
+
+
+4.Update Email Id Of Each Prents As "NA".?
+Ans-:
+
+
+mysql> update parents set e_mailId="NA";
+Query OK, 20 rows affected (0.01 sec)
+Rows matched: 20  Changed: 20  Warnings: 0
+
+mysql> select * from parents;
++------+----------------------+-----------+------+--------------+----------------+------------+
+| p_id | p_name               | city      | age  | AnnualIncome | vaccupation    | E_mailId   |
++------+----------------------+-----------+------+--------------+----------------+------------+
+|  101 | Saurabh Jagtap       | Satara    |   55 |       650000 | Manager        | NA         |
+|  102 | Karan Jagtap         | pune      |   40 |       554000 | Construction   | NA         |
+|  103 | Atharv Jagtap        | Delhi     |   45 |       652000 | Desinger       | NA         |
+|  104 | Om Jagtap            | pune      |   50 |       752000 | Teacher        | NA         |
+|  105 | Rudra Jagtap         | Mumbai    |   46 |       402000 | Agent          | NA         |
+|  106 | Sushil Rakshe        | Banglore  |   53 |       495000 | Company        | NA         |
+|  107 | Avinash Jagtap       | Banglore  |   62 |       695000 | BuisnessMan    | NA         |
+|  108 | Shivam Tambe         | Chennai   |   56 |       795000 | Farmer         | NA         |
+|  109 | Tushar Shinde        | surat     |   41 |       395000 | Farmer         | NA         |
+|  110 | Suyash Jamdade       | satara    |   50 |       505000 | HR             | NA         |
+|  111 | Divesh Kshirsagar    | jaipur    |   45 |       605000 | Soft Engineer  | NA         |
+|  112 | Prajwal ovhal        | Delhi     |   39 |       575000 | Soft Engineer  | NA         |
+|  113 | Kaushik Padwal       | Pune      |   49 |       475800 | Agent          | NA         |
+|  114 | Rupesh Sutar         | Banglore  |   42 |       495800 | Accountant     | NA         |
+|  115 | Suraj Gaikawad       | Ahemdabad |   38 |       695800 | Doctor         | NA         |
+|  116 | Mahesh Chaudhari     | Indor     |   58 |       795600 | Civil Engineer | NA         |
+|  117 | Shubham Katkar       | Mumbai    |   44 |       495600 | Chef           | NA         |
+|  118 | Akshay Bagade        | Patna     |   44 |       475600 | Worker         | NA         |
+|  119 | Sunil Otale          | Kokan     |   41 |       575600 | HR             | NA         |
+|  120 | Pooja Rajput         | Kokan     |   41 |       575600 | Police         | NA         |
++------+----------------------+-----------+------+--------------+----------------+------------+
+20 rows in set (0.00 sec)
